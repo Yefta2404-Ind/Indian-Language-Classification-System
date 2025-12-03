@@ -1,34 +1,101 @@
-Highlights by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# 🇮🇳 Indian Language Classification System
+Sistem klasifikasi bahasa India berbasis Deep Learning menggunakan model CNN.  
+Aplikasi ini dapat mengidentifikasi bahasa India dari input teks yang diberikan pengguna melalui antarmuka web berbasis Flask.
 
+---
 
-Just a fun little single pager I whipped up to test out my new scroll events plugin
-(github.com/ajlkn/jquery.scrollex). Clean, simple, fully responsive, and loaded with
-all the usual pre-styled elements. Enjoy :)
+## 🚀 Features
+- 🧠 **Deep Learning Model (CNN)** untuk klasifikasi bahasa India  
+- 🌐 **Web Interface (Flask)** — mudah digunakan  
+- 📂 Mendukung berbagai bahasa India seperti:
+  - Hindi
+  - Bengali
+  - Tamil
+  - Kannada
+  - Telugu
+  - Malayalam  
+  *(sesuaikan dengan dataset/mode kamu)*  
+- 🖼️ **Upload atau input teks secara langsung**  
+- 📊 Output berupa **prediksi bahasa + confidence score**
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+---
 
-(* = Not included)
+## 🗂️ Project Structure
+├── app.py
+├── model2.h5
+├── templates/
+│ └── index.html
+├── static/
+│ ├── styles.css
+│ └── images/
+├── temp/
+└── README.md
 
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
+yaml
+Salin kode
 
-AJ
-aj@lkn.io | @ajlkn
+---
 
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
+## 🧰 Technologies Used
+- **Python 3**
+- **Flask**
+- **TensorFlow / Keras**
+- **NumPy**
+- **HTML/CSS**
 
+---
 
-Credits:
+## 📦 Installation & Setup
 
-	Demo Images:
-		Unsplash (unsplash.com)
+### 1. Clone Repository
+```bash
+git clone https://github.com/Yefta2404-Ind/Indian-Language-Classification-System.git
+cd Indian-Language-Classification-System
+2. Install Dependencies
+bash
+Salin kode
+pip install -r requirements.txt
+Jika belum ada file requirements.txt, jalankan:
 
-	Icons:
-		Font Awesome (fontawesome.io)
+bash
+Salin kode
+pip freeze > requirements.txt
+3. Run Flask App
+bash
+Salin kode
+python app.py
+Akses melalui browser:
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+arduino
+Salin kode
+http://localhost:5000
+🧪 How It Works
+User memasukkan teks bahasa India
+
+Sistem mem-proses teks
+
+Model CNN melakukan klasifikasi
+
+Hasil prediksi ditampilkan di halaman web
+
+📘 Screenshots
+(Boleh tambahkan gambar UI kamu di folder /static/screenshots lalu tempelkan di sini)
+
+📌 To-Do (Future Updates)
+ Tambah akurasi model
+
+ Tambah dukungan lebih banyak bahasa India
+
+ Deploy aplikasi ke Render / Railway
+
+ Tambah halaman dokumentasi API
+
+🤝 Contributing
+Pull request selalu diterima. Boleh bantu perbaikan model, UI, ataupun dokumentasi.
+
+📜 License
+Project ini menggunakan lisensi MIT — silakan gunakan dan kembangkan secara bebas.
+
+👤 Author
+Jefta Aditya
+GitHub: https://github.com/Yefta2404-Ind
